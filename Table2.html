@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table,thead,th,td{
+            border: 1.5px solid black;
+            border-collapse: collapse;
+            font-family: sans-serif;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+        caption{
+            caption-side: bottom;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        thead{
+            background-color: azure;
+        }
+        th,td{
+            border: 1px solid gray;
+            text-align: center;
+            padding: 8px 12px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>TimeTable</caption>
+        <thead>
+            <tr><th rowspan="3">Day</th>
+            <th colspan="4">Seminar</th></tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+           <tr>
+            <th>Begin</th>
+            <th>End</th>
+           </tr>
+        </thead>
+        <tbody>
+            <tr><td rowspan="2">Monday</td>
+            <td rowspan="2">8:00</td>
+            <td rowspan="2">5:00</td>
+            <td>Introduction to HTMl</td>
+            </tr>
+            <tr><td>Tags and Elements </td>
+            </tr>
+            <tr><td rowspan="3">Tuesday</td>
+                <td >8:00</td>
+                <td>11:00</td>
+                <td rowspan="2">Form and Table</td>
+            </tr>
+            <tr>
+                <td>11:00</td>
+                <td>2:00</td>
+                
+            </tr>
+            <tr><td>2:00</td>
+            <td>5:00</td>
+            <td>List and Div</td></tr>
+            
+            <tr>
+                <td>Wednessday</td>
+                <td>8:00</td>
+                <td>11:00</td>
+                <td>DOM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>9:00</td>
+                <td>12:00</td>
+                <td> header and footer</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
